@@ -7,6 +7,7 @@
 
 import Foundation
 
+// datos expliocitos a extraer 
 
 struct ProductViewModel: Identifiable {
     private var product : Product

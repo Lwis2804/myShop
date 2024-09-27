@@ -18,7 +18,7 @@ class ProductListViewModel : ObservableObject {
         self.webservice = webservice
     }
     
-    func popularProducts() async {
+    func popularProducts() async { // extaer los productos que viene del webservice 
         do {
             let products  = try await webservice.getProducts()
             self.product = products.map(ProductViewModel.init)
